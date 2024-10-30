@@ -1,0 +1,75 @@
+h1, h2, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+
+
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+a {
+  color: var(--blue-900);
+  text-decoration: none;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+$max: 48;
+$unit: 'px';
+$i: 2;
+@while $i <= $max {
+  .tr-pl-#{$i} {
+    padding-left: #{$i + $unit} !important;
+  }
+  .tr-ml-#{$i} {
+    margin-left: #{$i + $unit} !important;
+  }
+  .tr-mb-#{$i} {
+    margin-bottom: #{$i + $unit} !important;
+  }
+  $i: $i + 2;
+}

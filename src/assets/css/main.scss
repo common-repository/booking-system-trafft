@@ -1,0 +1,13 @@
+@import './_variables';
+@import './_utils';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#trafft-wordpress-plugin {
+  font-family: 'Inter Var', sans-serif;
+  margin: 0;
+}

@@ -1,0 +1,47 @@
+.elementor-element .icon .trafft-logo:before {
+  content: "";
+  height: 30px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.elementor-element .icon .trafft-logo:before {
+  background-image: url(../img/logo-symbol.svg);
+}
+
+#elementor-controls .elementor-control-content {
+    display: block;
+}
+
+.trafft-elementor-content {
+  margin: 15px;
+}
+
+.trafft-elementor-content:before {
+  content: "";
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-image: url(../img/logo-symbol.svg);
+}
+
+.trafft-elementor-content-title {
+  font-weight: 600 !important;
+}
+
+.trafft-elementor-content-p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #6d7882;
+}
+
+.elementor-control-trafft_booking_section .elementor-panel-heading {
+  height: auto;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "trafft-wordpress-plugin",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@wordpress/blocks": "^12.15.0",
+    "trafft-design-system": "^0.0.194",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.2",
+    "vue-screen": "^2.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.39.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "sass": "^1.64.0",
+    "vite": "^4.3.9",
+    "rollup-plugin-copy": "^3.4.0"
+  }
+}

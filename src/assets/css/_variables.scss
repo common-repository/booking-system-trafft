@@ -1,0 +1,84 @@
+:root {
+  --white: #FFFFFF;
+  --black: (255, 255, 255);
+  --shade-1000: #000D27;
+  --shade-900: #00143C;
+  --shade-800: #334363;
+  --shade-700: #66728A;
+  --shade-600: #808A9E;
+  --shade-500: #99A1B1;
+  --shade-450: #B3B9C5;
+  --shade-400: #CCD0D8;
+  --shade-300: #DEE1E6;
+  --shade-250: #EDEFF3;
+  --shade-200: #F4F6FA;
+  --shade-150: #F7F8F9;
+  --blue-1000: #064EC6;
+  --blue-900: #005AEE;
+  --blue-800: #4083F2;
+  --blue-700: #669CF5;
+  --blue-600: #8CB4F7;
+  --blue-500: #CCDEFC;
+  --blue-400: #E6EFFE;
+  --blue-300: #F2F6FE;
+  --blue-200: #F9FBFF;
+  --green-1000: #16A862;
+  --green-900: #18CA75;
+  --green-800: #52D797;
+  --green-700: #80E2B3;
+  --green-600: #AFEDCF;
+  --green-500: #D1F4E3;
+  --green-400: #E8FAF2;
+  --green-300: #F3FCF8;
+  --red-1000: #CF074E;
+  --red-900: #E90E5C;
+  --red-800: #EF4A85;
+  --red-700: #F487AE;
+  --red-600: #F7ABC6;
+  --red-500: #FBCFDE;
+  --red-400: #FDE7EF;
+  --red-300: #FEF3F7;
+  --yellow-1000: #E4A30B;
+  --yellow-900: #FAB005;
+  --yellow-800: #FBC444;
+  --yellow-700: #FCD476;
+  --yellow-600: #FDE4A8;
+  --yellow-500: #FEEFCD;
+  --yellow-400: #FFF8E6;
+  --yellow-300: #FEFBF2;
+}
+
+/* Responsive */
+$tablet: 1024px;
+$phone: 782px;
+
+/* Media Mixins */
+@mixin tablet-up {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (max-width: $tablet) and (min-width: $phone + 1) {
+    @content;
+  }
+}
+
+@mixin phone-up {
+  @media (min-width: $phone + 1) {
+    @content;
+  }
+}
+
+@mixin phone-down {
+  @media (max-width: $phone) {
+    @content;
+  }
+}
